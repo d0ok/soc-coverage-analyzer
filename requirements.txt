@@ -1,0 +1,5 @@
+pyyaml>=6.0
+pydantic>=2.0
+pytest>=8.0
+# Optional AI dependency: pip install -e ".[ai]"
+# Optional dashboard dependency: pip install -e ".[dashboard]"

@@ -1,0 +1,7 @@
+# Log sources your SOC actually collects (edit this file for your environment).
+# Keys under `collected` must exist in config/logsource_mapping.yaml.
+collected:
+  - linux_syslog_auth     # /var/log/auth.log, syslog (sshd, sudo, PAM)
+  - windows_security      # Windows Security event log
+  - web_server            # Apache / Nginx / IIS / Tomcat access logs
+  - network_device_syslog # firewall / router / switch syslog

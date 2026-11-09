@@ -1,0 +1,47 @@
+# Maps your own log-source keys to ATT&CK log-source names (case-insensitive, * wildcard).
+# ATT&CK names come from the analytics of ATT&CK detection strategies (v18+).
+linux_syslog_auth:
+  - "linux:syslog"
+  - "linux:auth"
+  - "syslog:auth"
+linux_auditd:
+  - "auditd:*"
+linux_osquery:
+  - "linux:osquery"
+windows_security:
+  - "WinEventLog:Security"
+windows_sysmon:
+  - "WinEventLog:Sysmon"
+  - "linux:Sysmon"
+windows_powershell:
+  - "WinEventLog:PowerShell"
+windows_system_app:
+  - "WinEventLog:System"
+  - "WinEventLog:Application"
+web_server:
+  - "apache:*"
+  - "nginx:*"
+  - "iis:*"
+  - "web:*"
+network_device_syslog:
+  - "networkdevice:syslog"
+  - "networkdevice:cli"
+  - "networkdevice:config"
+  - "networkdevice:aaa"
+network_traffic:
+  - "NSM:*"
+  - "AWS:VPCFlowLogs"
+  - "Network Traffic"
+kubernetes_docker:
+  - "kubernetes:*"
+  - "docker:*"
+aws_cloudtrail:
+  - "AWS:CloudTrail"
+  - "AWS:CloudWatch"
+azure_m365:
+  - "azure:*"
+  - "m365:*"
+okta_idp:
+  - "saas:okta"
+  - "Okta:*"
+  - "idp:*"

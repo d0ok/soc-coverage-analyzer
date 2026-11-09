@@ -1,0 +1,9 @@
+{"type":"bundle","id":"bundle--fixture","objects":[
+{"type":"x-mitre-collection","id":"x-mitre-collection--fixture","x_mitre_version":"20.1"},
+{"type":"x-mitre-tactic","id":"x-mitre-tactic--credential","name":"Credential Access","x_mitre_shortname":"credential-access"},
+{"type":"attack-pattern","id":"attack-pattern--t1110","name":"Brute Force","x_mitre_is_subtechnique":false,"kill_chain_phases":[{"kill_chain_name":"mitre-attack","phase_name":"credential-access"}],"external_references":[{"source_name":"mitre-attack","external_id":"T1110"}]},
+{"type":"attack-pattern","id":"attack-pattern--t1003","name":"OS Credential Dumping","x_mitre_is_subtechnique":false,"kill_chain_phases":[{"kill_chain_name":"mitre-attack","phase_name":"credential-access"}],"x_mitre_data_sources":["Windows Security"],"external_references":[{"source_name":"mitre-attack","external_id":"T1003"}]},
+{"type":"x-mitre-detection-strategy","id":"x-mitre-detection-strategy--t1110","name":"Detect brute force","x_mitre_analytic_refs":["x-mitre-analytic--ssh"]},
+{"type":"x-mitre-analytic","id":"x-mitre-analytic--ssh","x_mitre_log_source_references":[{"name":"linux:syslog"}]},
+{"type":"relationship","relationship_type":"detects","source_ref":"x-mitre-detection-strategy--t1110","target_ref":"attack-pattern--t1110"}
+]}
